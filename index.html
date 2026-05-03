@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Business administration portfolio for [Your Name]." />
+  <title>[Your Name] | Business Administration Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">[Your Name]</a>
+
+      <nav class="nav-links">
+        <a href="#background">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="resume.pdf" class="nav-btn" target="_blank">Resume</a>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <!-- INTRO / HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">BUSINESS ADMINISTRATION PORTFOLIO</p>
+          <h1 class="name">[Your Name]</h1>
+
+          <p class="hero-description">
+            Undergraduate Business Administration student with interests in marketing, finance,
+            operations, management, analytics, entrepreneurship, and professional communication.
+          </p>
+
+          <p class="hero-goals">
+            I am currently seeking internship or entry-level business opportunities where I can apply
+            my coursework, project experience, leadership skills, and analytical thinking to real business problems.
+            <br><br>
+            Use this space to briefly describe your career goals, strongest interests, and what type of roles
+            you are looking for.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="cta-primary">View Projects</a>
+            <a href="resume.pdf" target="_blank" class="cta-secondary">Download Resume</a>
+            <button onclick="copyEmail()" class="cta-secondary">Email Me</button>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <img src="images/profile.jpg" alt="Professional headshot placeholder" class="hero-image" onclick="openGallery(this)" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SNAPSHOT -->
+    <section class="skills-section">
+      <div class="skills-header">
+        <p class="eyebrow">SKILLS SNAPSHOT</p>
+        <h1>Business Strengths</h1>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h2>Marketing & Strategy</h2>
+          <p>Market research, competitive analysis, campaign planning, branding, customer segmentation, and presentation development.</p>
+        </article>
+
+        <article class="skill-card">
+          <h2>Finance & Analytics</h2>
+          <p>Excel, budgeting, financial analysis, data interpretation, KPI tracking, reporting, and spreadsheet-based decision support.</p>
+        </article>
+
+        <article class="skill-card">
+          <h2>Operations & Management</h2>
+          <p>Process improvement, project coordination, team leadership, business communication, scheduling, and workflow organization.</p>
+        </article>
+
+        <article class="skill-card">
+          <h2>Communication</h2>
+          <p>Professional writing, public speaking, slide decks, client-facing communication, collaboration, and stakeholder updates.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION & EXPERIENCE SECTION -->
+    <section class="background-section" id="background">
+      <div class="background-header">
+        <p class="eyebrow">BACKGROUND</p>
+        <h1>Education & Professional Experience</h1>
+        <p class="intro">
+          Replace this text with a short summary of your academic background, business interests,
+          internships, part-time jobs, leadership roles, and campus involvement.
+        </p>
+      </div>
+
+      <div class="background-grid">
+        <!-- EDUCATION -->
+        <article class="background-card">
+          <h2>Education</h2>
+
+          <h3>[University Name]</h3>
+          <p class="subtitle">B.A./B.S. Business Administration</p>
+          <p class="date">Expected Graduation: [Month Year]</p>
+          <p class="date"><strong>GPA: [Optional]</strong></p>
+
+          <p class="description">
+            Business administration undergraduate focused on [marketing/finance/operations/management/analytics].
+            Add a short summary of your academic focus and career direction.
+          </p>
+
+          <p class="description">
+            Relevant coursework: Marketing Management, Financial Accounting, Managerial Accounting,
+            Business Analytics, Organizational Behavior, Operations Management, Business Strategy,
+            Business Law, Economics, Statistics, Information Systems.
+          </p>
+        </article>
+
+        <!-- PROFESSIONAL EXPERIENCE -->
+        <article class="background-card">
+          <h2>Professional Experience</h2>
+
+          <h3>[Job Title or Internship Title]</h3>
+          <p class="subtitle">[Company/Organization] — [City, State]</p>
+          <p class="date">[Month Year] – [Month Year or Present]</p>
+
+          <ul class="experience-list">
+            <li>Describe one responsibility or accomplishment using a strong action verb.</li>
+            <li>Include measurable impact when possible, such as increased engagement, reduced processing time, or improved reporting accuracy.</li>
+            <li>Mention tools used, such as Excel, PowerPoint, Google Sheets, Tableau, Canva, CRM software, or POS systems.</li>
+            <li>Highlight teamwork, customer service, leadership, analysis, operations, or communication experience.</li>
+          </ul>
+
+          <div class="tags">
+            <span>Excel</span>
+            <span>Communication</span>
+            <span>Analytics</span>
+            <span>Project Coordination</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+      <div class="projects-header">
+        <div>
+          <p class="eyebrow">FEATURED WORKS</p>
+          <h1>Projects</h1>
+        </div>
+        <p class="intro">
+          A collection of academic, professional, and personal business projects. Replace each card with
+          case studies, class projects, presentations, reports, student organization work, or internship results.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1 -->
+        <article class="project-card">
+          <div class="project-images four-images">
+            <img src="images/project1-1.jpg" alt="Project 1 image 1" onclick="openGallery(this)" />
+            <img src="images/project1-2.jpg" alt="Project 1 image 2" onclick="openGallery(this)" />
+            <img src="images/project1-3.jpg" alt="Project 1 image 3" onclick="openGallery(this)" />
+            <img src="images/project1-4.jpg" alt="Project 1 image 4" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Marketing Campaign Analysis]</h2>
+          <p class="subtitle">Class Project / Business Case Study</p>
+
+          <p class="description">
+            <strong>Role:</strong> [Your role, such as Team Lead, Research Analyst, Presenter, Designer].
+            <br><br>
+            <strong>Objective:</strong> Briefly describe the business problem, assignment, company, market, or goal.
+            <br><br>
+            <strong>Results:</strong> Summarize what you produced, what you learned, and any measurable outcome,
+            such as improved customer targeting, stronger campaign positioning, projected revenue impact,
+            or final presentation results.
+          </p>
+
+          <div class="tags">
+            <span>Marketing</span>
+            <span>Research</span>
+            <span>Strategy</span>
+            <span>Presentation</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card">
+          <div class="project-images four-images">
+            <img src="images/project2-1.jpg" alt="Project 2 image 1" onclick="openGallery(this)" />
+            <img src="images/project2-2.jpg" alt="Project 2 image 2" onclick="openGallery(this)" />
+            <img src="images/project2-3.jpg" alt="Project 2 image 3" onclick="openGallery(this)" />
+            <img src="images/project2-4.jpg" alt="Project 2 image 4" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Financial Analysis Report]</h2>
+          <p class="subtitle">Class Project / Independent Analysis</p>
+
+          <p class="description">
+            <strong>Objective:</strong> Analyze a company, product, budget, investment decision, or financial performance trend.
+            <br><br>
+            <strong>Results:</strong> Explain the final recommendation, key metrics, spreadsheet model, or presentation outcome.
+            Include tools used, such as Excel, Google Sheets, financial ratios, charts, or forecasting.
+          </p>
+
+          <div class="tags">
+            <span>Finance</span>
+            <span>Excel</span>
+            <span>Data Analysis</span>
+            <span>Reporting</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card">
+          <div class="project-images four-images">
+            <img src="images/project3-1.jpg" alt="Project 3 image 1" onclick="openGallery(this)" />
+            <img src="images/project3-2.jpg" alt="Project 3 image 2" onclick="openGallery(this)" />
+            <img src="images/project3-3.jpg" alt="Project 3 image 3" onclick="openGallery(this)" />
+            <img src="images/project3-4.jpg" alt="Project 3 image 4" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Operations Improvement Plan]</h2>
+          <p class="subtitle">Operations / Management Project</p>
+
+          <p class="description">
+            <strong>Objective:</strong> Identify a process, workflow, service issue, or operational bottleneck and develop an improvement plan.
+            <br><br>
+            <strong>Results:</strong> Describe the proposed solution, expected business impact, process map, cost/time savings,
+            or improvement in customer experience.
+          </p>
+
+          <div class="tags">
+            <span>Operations</span>
+            <span>Process Improvement</span>
+            <span>Management</span>
+            <span>Problem Solving</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card">
+          <div class="project-images three-images">
+            <img src="images/project4-1.jpg" alt="Project 4 image 1" onclick="openGallery(this)" />
+            <img src="images/project4-2.jpg" alt="Project 4 image 2" onclick="openGallery(this)" />
+            <img src="images/project4-3.jpg" alt="Project 4 image 3" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Entrepreneurship or Business Plan]</h2>
+          <p class="subtitle">Business Plan / Startup Concept</p>
+
+          <p class="description">
+            <strong>Objective:</strong> Develop a business concept, value proposition, customer profile, pricing plan,
+            go-to-market strategy, or competitive positioning.
+            <br><br>
+            <strong>Results:</strong> Summarize the final plan, business model, target customer, competitive advantage,
+            projected financials, or pitch deck outcome.
+          </p>
+
+          <div class="tags">
+            <span>Entrepreneurship</span>
+            <span>Business Model</span>
+            <span>Market Research</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 5 -->
+        <article class="project-card">
+          <div class="project-images three-images">
+            <img src="images/project5-1.jpg" alt="Project 5 image 1" onclick="openGallery(this)" />
+            <img src="images/project5-2.jpg" alt="Project 5 image 2" onclick="openGallery(this)" />
+            <img src="images/project5-3.jpg" alt="Project 5 image 3" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Leadership or Student Organization Work]</h2>
+          <p class="subtitle">Leadership / Campus Involvement</p>
+
+          <p class="description">
+            <strong>Objective:</strong> Describe the organization, event, team, fundraising effort, or leadership responsibility.
+            <br><br>
+            <strong>Results:</strong> Include event attendance, funds raised, members coordinated, partnerships built,
+            process improvements, or other measurable outcomes.
+          </p>
+
+          <div class="tags">
+            <span>Leadership</span>
+            <span>Teamwork</span>
+            <span>Event Planning</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 6 -->
+        <article class="project-card">
+          <div class="project-images two-images">
+            <img src="images/project6-1.jpg" alt="Project 6 image 1" onclick="openGallery(this)" />
+            <img src="images/project6-2.jpg" alt="Project 6 image 2" onclick="openGallery(this)" />
+          </div>
+
+          <h2>[Project Title: Data Dashboard or Business Analytics]</h2>
+          <p class="subtitle">Analytics / Reporting Project</p>
+
+          <p class="description">
+            <strong>Objective:</strong> Use data to answer a business question, track performance, or create a reporting dashboard.
+            <br><br>
+            <strong>Results:</strong> Summarize the dashboard, charts, KPIs, insights, and recommendations. Mention tools such as
+            Excel, Google Sheets, Tableau, Power BI, SQL, or Python if applicable.
+          </p>
+
+          <div class="tags">
+            <span>Analytics</span>
+            <span>Dashboard</span>
+            <span>KPIs</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">CONTACT</p>
+      <h1>Let’s Connect</h1>
+      <p>
+        I am currently seeking internship and entry-level opportunities in business, marketing,
+        finance, operations, analytics, and management.
+      </p>
+
+      <div class="contact-links">
+        <button onclick="copyEmail()" class="cta-secondary">Email Me</button>
+        <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+      </div>
+
+      <p class="contact-email">your.email@example.com</p>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" aria-hidden="true">
+    <button id="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+    <button id="prev-btn" type="button" aria-label="Previous image">&#10094;</button>
+
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Expanded image" />
+      <div id="lightbox-caption"></div>
+    </div>
+
+    <button id="next-btn" type="button" aria-label="Next image">&#10095;</button>
+    <div id="lightbox-counter"></div>
+  </div>
+
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+    const closeBtn = document.getElementById("lightbox-close");
+    const counter = document.getElementById("lightbox-counter");
+    const caption = document.getElementById("lightbox-caption");
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function openGallery(clickedImg) {
+      const projectCard = clickedImg.closest(".project-card");
+
+      if (projectCard) {
+        currentImages = Array.from(projectCard.querySelectorAll(".project-images img"));
+      } else {
+        currentImages = [clickedImg];
+      }
+
+      currentIndex = currentImages.indexOf(clickedImg);
+      if (currentIndex < 0) currentIndex = 0;
+
+      updateLightboxImage();
+      lightbox.classList.add("active");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function updateLightboxImage() {
+      const currentImage = currentImages[currentIndex];
+      lightboxImg.src = currentImage.src;
+      lightboxImg.alt = currentImage.alt || "Expanded image";
+      caption.textContent = currentImage.alt || "";
+
+      counter.textContent = currentImages.length > 1 ? `${currentIndex + 1} / ${currentImages.length}` : "";
+      prevBtn.style.display = currentImages.length > 1 ? "flex" : "none";
+      nextBtn.style.display = currentImages.length > 1 ? "flex" : "none";
+    }
+
+    function showNextImage() {
+      if (currentImages.length <= 1) return;
+      currentIndex = (currentIndex + 1) % currentImages.length;
+      updateLightboxImage();
+    }
+
+    function showPrevImage() {
+      if (currentImages.length <= 1) return;
+      currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+      updateLightboxImage();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImg.src = "";
+      lightboxImg.alt = "Expanded image";
+      caption.textContent = "";
+      counter.textContent = "";
+      document.body.style.overflow = "";
+      currentImages = [];
+      currentIndex = 0;
+    }
+
+    prevBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      showPrevImage();
+    });
+
+    nextBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      showNextImage();
+    });
+
+    closeBtn.addEventListener("click", function (event) {
+      event.stopPropagation();
+      closeLightbox();
+    });
+
+    lightboxImg.addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
+    document.querySelector(".lightbox-content").addEventListener("click", function (event) {
+      event.stopPropagation();
+    });
+
+    lightbox.addEventListener("click", function () {
+      closeLightbox();
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (!lightbox.classList.contains("active")) return;
+      if (event.key === "Escape") closeLightbox();
+      if (event.key === "ArrowRight") showNextImage();
+      if (event.key === "ArrowLeft") showPrevImage();
+    });
+
+    function copyEmail() {
+      const email = "your.email@example.com";
+      navigator.clipboard.writeText(email);
+      alert("Email copied to clipboard!");
+    }
+  </script>
+</body>
+</html>
